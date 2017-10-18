@@ -8,7 +8,22 @@ import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
 import { PopularComponent } from './popular/popular.component';
 import { FeaturesService } from './features.service';
+import {Routes, RouterModule} from '@angular/router';
 
+const routes: Routes = [
+  {
+    path: '',
+    component: PopularComponent
+  },
+  {
+    path: 'features',
+    component: FeaturesComponent
+  },
+  {
+    path: 'popular',
+    component: PopularComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -20,7 +35,8 @@ import { FeaturesService } from './features.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [FeaturesService],
   bootstrap: [AppComponent]
