@@ -5,10 +5,14 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material'
 
 import { AppComponent } from './app.component';
+import { FeaturesComponent } from './features/features.component';
+import { PopularComponent } from './popular/popular.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FeaturesComponent,
+    PopularComponent
   ],
   imports: [
     BrowserModule,
