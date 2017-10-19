@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
@@ -35,8 +35,8 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   providers: [FeaturesService],
   bootstrap: [AppComponent]
