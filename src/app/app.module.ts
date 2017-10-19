@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
 import { PopularComponent } from './popular/popular.component';
+
 import { FeaturesService } from './features.service';
 import {Routes, RouterModule} from '@angular/router';
 
