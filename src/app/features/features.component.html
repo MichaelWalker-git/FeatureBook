@@ -1,2 +1,6 @@
-<h3>Popular Features</h3>
-<md-card class="contact-card"></md-card>
+<md-nav-list>
+  <a md-list-item *ngFor="let feature of features">
+    <h4 md-line>{{feature.name}}</h4>
+    <p md-line>{{feature.number}}</p>
+  </a>
+</md-nav-list>

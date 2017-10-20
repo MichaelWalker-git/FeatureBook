@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule} from '@angular/material';
+import { MatButtonModule, MatCardModule, MatInputModule, MatSidenavModule, MatToolbarModule, MatListModule, MatIconModule, MatDialogModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
 import { PopularComponent } from './popular/popular.component';
 
 import { FeaturesService } from './features.service';
-import {Routes, RouterModule} from '@angular/router';
+import { Routes, RouterModule} from '@angular/router';
 
 const routes: Routes = [
   {
@@ -39,10 +39,14 @@ const routes: Routes = [
     HttpModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatButtonModule,
-    MatIconModule
+    MatListModule,
+    MatIconModule,
+    MatDialogModule,
   ],
   providers: [FeaturesService],
   bootstrap: [AppComponent]
