@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FeaturesService} from '../features.service';
 
 @Component({
   selector: 'app-features',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./features.component.css']
 })
 export class FeaturesComponent implements OnInit {
+  features: any[];
 
-  constructor() { }
+  constructor(private featuresService: FeaturesService) { }
 
   ngOnInit() {
+    this.features = this.featuresService.getFeatures().slice(0, 3);
   }
 
 }
