@@ -1,22 +1,18 @@
 <md-sidenav-container fullscreen>
-    <md-sidenav #menu>
-      <md-nav-list>
-        <a md-list-item routerLink="/popular" (click)="menu.close()">Popular</a>
-        <a md-list-item routerLink="/features" (click)="menu.close()">Features</a>
-      </md-nav-list>
-      <hr>
-      <button md-button (click)="menu.close()">Close</button>
-    </md-sidenav>
-    <!-- Body -->
-    <md-toolbar color="primary">
-      <button md-icon-button (click)="men.open()">
-        <md-icon>Menu</md-icon>
-        {{title}}
-      </button>
-    </md-toolbar>
-    <div class="main-content">
-      <router-outlet></router-outlet>
-    </div>
+  <md-sidenav #menu>
+    <md-nav-list>
+      <a md-list-item routerLink="/popular" (click)="menu.close()">Popular</a>
+      <a md-list-item routerLink="/features" (click)="menu.close()">Features</a>
+    </md-nav-list>
+    <hr>
+    <button md-button (click)="menu.close()">CLOSE</button>
+  </md-sidenav>
+  <md-toolbar color="primary">
+    <button md-icon-button (click)="menu.open()">
+      <md-icon>menu</md-icon>
+    </button> {{ title }}
+  </md-toolbar>
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
 </md-sidenav-container>
-
-
