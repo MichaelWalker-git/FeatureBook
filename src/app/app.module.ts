@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatInputModule, MatSidenavModule, MatToolbarModule, MatListModule, MatIconModule, MatDialogModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { FeaturesComponent } from './features/features.component';
+import {AddFeatureDialog, FeaturesComponent} from './features/features.component';
 import { PopularComponent } from './popular/popular.component';
 
 import { FeaturesService } from './features.service';
@@ -31,7 +31,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     FeaturesComponent,
-    PopularComponent
+    PopularComponent,
+    AddFeatureDialog
   ],
   imports: [
     BrowserModule,
@@ -49,6 +50,7 @@ const routes: Routes = [
     MatDialogModule,
   ],
   providers: [FeaturesService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AddFeatureDialog]
 })
 export class AppModule { }
