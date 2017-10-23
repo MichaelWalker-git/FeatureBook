@@ -38,7 +38,7 @@ export class FeaturesComponent implements OnInit {
       <input matInput #featureName placeholder="Feature Name">
 </mat-input-container>
     <mat-input-container>
-      <input matInput #featureNumber placeholder="Feature Phonenumber">
+      <input matInput #featureNumber placeholder="Feature Phone number">
 </mat-input-container>
 <button mat-raised-button color="primary" (click)="dialogRef.close({
   name: featureName.value,
