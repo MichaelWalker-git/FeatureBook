@@ -28,6 +28,10 @@ export class FeaturesComponent implements OnInit {
       }
     })
   }
+
+  delete(feature){
+    this.features.splice(this.features.indexOf(feature), 1);
+  }
 }
 
 @Component({

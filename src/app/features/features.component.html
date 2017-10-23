@@ -2,6 +2,9 @@
   <a mat-list-item *ngFor="let feature of features">
     <h4 mat-line>{{feature.name}}</h4>
     <p mat-line>{{feature.number}}</p>
+    <button mat-icon-button (click)="delete(feature)">
+      <mat-icon>delete</mat-icon>
+    </button>
   </a>
 </mat-nav-list>
 
